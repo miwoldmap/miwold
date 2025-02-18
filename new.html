@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miwold</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="your-background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1>Miwold - Home Decor & Candles</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Centered "Book Your Product" Section -->
+    <section class="book-product">
+        <div class="book-container">
+            <h2>Book Your Product Now!</h2>
+            <p>Choose from a wide range of home decor and candles. Make your selection and proceed with payment in crypto.</p>
+            <button onclick="window.location.href='#'">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-item">
+            <img src="ai-candle-image.jpg" alt="Scented Candle">
+            <h2>Scented Candle</h2>
+            <p>Price: 0.01 BTC</p>
+            <button onclick="payWithCrypto()">Buy with Crypto</button>
+        </div>
+        <!-- Add more products here -->
+    </section>
+
+    <!-- Payment Section on Left Side -->
+    <div class="payment-side">
+        <h3>Crypto Payment</h3>
+        <p>Choose your payment method:</p>
+        <button onclick="payWithCrypto()">Pay with Bitcoin</button>
+        <button onclick="payWithCrypto()">Pay with Ethereum</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Miwold Enterprises. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function payWithCrypto() {
+            alert("Redirecting to crypto payment gateway...");
+        }
+    </script>
+</body>
+</html>
